@@ -1,0 +1,127 @@
+/* Reset di base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo della pagina */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1c1c1e;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Contenitore del curriculum */
+.curriculum-info {
+    background-color: #2b2b2e;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    width: 100%;
+    border: 1px solid #3a3a3c;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Accento dorato/metallizzato */
+.curriculum-info::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #e1b12c, #fbc531);
+    border-radius: 50%;
+    z-index: 0;
+    opacity: 0.2;
+    transform: rotate(45deg);
+}
+
+.curriculum-info::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #e1b12c, #fbc531);
+    border-radius: 50%;
+    z-index: 0;
+    opacity: 0.2;
+    transform: rotate(45deg);
+}
+
+/* Contenuto sopra lo sfondo */
+.curriculum-info * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Titolo principale */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #fbc531;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Linea decorativa sotto il titolo */
+h1::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #fbc531;
+    margin: 10px auto;
+}
+
+/* Sezione dei sottotitoli */
+h2 {
+    font-size: 1.5rem;
+    color: #e1b12c;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Testo delle informazioni */
+p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #dcdde1;
+}
+
+span {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Responsività per schermi più piccoli */
+@media (max-width: 768px) {
+    .curriculum-info {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

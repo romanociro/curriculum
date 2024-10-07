@@ -1,0 +1,32 @@
+{
+    "nome":"ciro",
+    "cognome":"romano",
+    "data_nascita": {
+       "anno": 2007,
+       "mese":"dicembre",
+       "giorno": 1
+    },
+
+    "cellulare":"+39 347 853 8579",
+    "telefono":73737377373,
+    "indirizzo_posta_elettronica":"ciroromano1098@gmail.com",
+    "indirizzo PEC": "/",
+    "incarico":"disoccupato",
+    "istruzione":{
+        "data_inizio":"2021",
+        "data_fine":"2026",
+        "nome":"diploma scuola superiore",
+        "tipo_istruzione":"scolastica",
+        "qualifica":"diploma perito informatico"
+    },
+    "esperienza_lavorativa":false,
+    "lingue":{
+        "lingua":"inglese",
+        "capacità_lettura":"buono",
+        "capacità_scrittura":"buono",
+        "capacità_orale":"mediocre"
+    },
+    "competenze_tecniche":"buono"
+
+
+}
